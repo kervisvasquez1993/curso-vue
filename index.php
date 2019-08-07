@@ -16,9 +16,30 @@
      <span>{{mostrarMensaje()}}</span>
      <br>
      <span>{{hola()}}</span>
+     <br>
+
+     <button v-on:click="mensaje = 'este es el nuevo mensaje22'"> cambiar mensaje </button>
+     <button v-on:click="destruir"> destruir  </button>
 
      <img v-bind:src="src">
-         </div>
+    </div>
+
+    <br>
+    <div class="vue2">
+        <button v-on:click="primero++">Incrementar primero</button>
+        <button v-on:click="seg++">Incrementar segu</button>
+        <button v-on:click="ter++">Incrementar tercero</button>
+        <button v-on:click="cuar++">Incrementar cuarto</button>
+        <p>prim {{primero}}</p>
+        <p>seg {{seg}}</p>
+        <p>ter {{ter}}</p>
+        <p>cuar {{cuar}}</p>
+        <p>total {{total}}</p>
+        
+        
+
+        
+    </div>
 
 
     
