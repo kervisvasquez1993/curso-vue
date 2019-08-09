@@ -36,7 +36,9 @@
         <p>cuar {{cuar}}</p>
         <p>total {{total}}</p>
         
-        
+        <input type="text" v-model="nombre">
+        <hr>
+        <h1>hola {{nombre}}, bienvenido al curso de vue.js</h1>
 
         
     </div>

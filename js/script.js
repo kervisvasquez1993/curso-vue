@@ -53,6 +53,7 @@ var app = new Vue({
 var app2 = new Vue({
     el : '.vue2',
     data : {
+        nombre : 'kervis',
         primero : 0,
         seg : 0,
         ter : 0,
@@ -79,3 +80,57 @@ var app2 = new Vue({
 7)beforeDestroy()
 8)destroyed()
 */
+
+
+
+/* ===========================
+
+        CLASE 2 == DIRECTIVAS
+    PEQUEÑOS COMANDO QUE PODEMOS CORRES EN NUESTRAS ETIQUETAS HTML
+    PARA CAMBIAR EL COMPORTAMIENTO DEL DO O CAMBIAR ATRIBUTO DEL DOM
+                    v-
+
+    les podemos pasar valores
+
+    <p v-if="miVar"> MI TEXTO </p> 
+        
+================================*/
+
+
+
+
+
+/* =================================
+
+
+
+---EVENTOS EN VUE.JS
+
+
+===================================== */
+
+
+eventos = new Vue({
+    el: '.eventos',
+    data : {
+        contador : 0,
+        x : 0,
+        y : 0
+    },
+    methods: {
+        sumarUno : function(){
+            this.contador++
+        },
+        restarUno : function(){
+            this.contador--
+        },
+        alerta : function(mensaje){
+          alert(mensaje)   
+        },
+        mostrarUbicacion : function(evento){
+            this.x = evento.clientX
+            this.y = evento.clientY
+        }
+    }
+
+})
