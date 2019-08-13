@@ -18,8 +18,10 @@
     <hr>
     <button v-on:click="alerta('esta es la alerta')">mostaralert</button>
     <hr>
-    <div style="height: 300px" v-on:mousemove="mostrarUbicacion"></div>
-    x: {{x}}, y{{y}}
+    <div style="height: 300px" v-on:mousemove="mostrarUbicacion"
+    v-on:click="sumar"
+    ></div>
+    x: {{x}}, y{{y}}, contador {{contador}}
   </div>
 
 

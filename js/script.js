@@ -130,6 +130,9 @@ eventos = new Vue({
         mostrarUbicacion : function(evento){
             this.x = evento.clientX
             this.y = evento.clientY
+        },
+        sumar: function(){
+            this.contador++
         }
     }
 
